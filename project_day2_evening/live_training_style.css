@@ -1,0 +1,61 @@
+
+    #lt_top_live{
+       font-size: large;
+        width: 80vw;
+        height: 250px;
+        margin: 50px;
+        margin-left: 200px;
+        font-family: 'Open Sans', sans-serif;
+        background-color: white;
+    }
+    #lt_w300{
+        font-weight: 300;
+        color: rgb(122, 118, 118);
+    }
+    #lt_location{
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+       
+        }
+    #lt_event>option,#lt_event{
+        color: rgb(11, 78, 179);
+        border: none;
+    }    
+    #lt_body{
+        background-color: whitesmoke;
+    }
+    .lt_available{
+        float: left;
+    }
+    #lt_cv{
+        width: 76wv;
+        height: 220px;
+        margin: 30px 300px;
+        text-align: left;
+        background-color: white;
+        padding: 20px;
+       font-family:Arial, Helvetica, sans-serif;
+    }
+    #lt_regi{
+        text-align: right;
+        height: 40px;
+        width: 120px;
+        color: white;
+        padding-right: 25px;
+        background-color: blue;
+        border: blue;
+        margin-left: 500px;
+    }
+    #lt_footer{
+        width: 90vw;
+        height: 100px;
+        background-color: white;
+        float: left;
+        margin: 40px;
+        padding: 20px;
+        color: rgb(138, 133, 133);
+    }
+    #lt_country{
+        text-align: right;
+        float: right;
+    }
