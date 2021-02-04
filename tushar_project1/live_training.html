@@ -19,6 +19,8 @@
             margin-left: 200px;
             font-family: 'Open Sans', sans-serif;
             background-color: white;
+            padding-top: 20px;
+            
         }
         #lt_w300{
             font-weight: 300;
@@ -77,6 +79,9 @@
             height: 50px;
             display: grid;
             grid-template: "HP onc crt lit rw mr btn1 btn2";
+            position: fixed;
+            margin-top: -50px;
+
         }
         #nav>div>img{
             width: 300px;
@@ -135,8 +140,8 @@
             develop new skills. What will you learn today?</p>
       </div>
       <div id="lt_location">
-        <label for="lt_event">Show events in:</label>
-           <select id="lt_event">
+        <label for="lt_event" >Show events in:</label>
+           <select id="lt_event" style="width: auto";>
                <option value ="all_location">All location</option>
                <option value ="online_location">Online</option>
             </select>

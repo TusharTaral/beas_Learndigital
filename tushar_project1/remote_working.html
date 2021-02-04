@@ -14,7 +14,7 @@
             height: 200px;
             text-align: center;
             font-size: larger;
-            padding: 20px 100px;
+            padding: 80px 100px;
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(112, 108, 108);
         }
@@ -88,6 +88,9 @@
             height: 50px;
             display: grid;
             grid-template: "HP onc crt lit rw mr btn1 btn2";
+            position: fixed;
+            padding-bottom: 20px;
+            margin-top: -10px;
         }
         #nav>div>img{
             width: 300px;
@@ -126,9 +129,12 @@
              color: red;
              cursor: pointer;
         }
+        a{
+            text-decoration: none;
+        }
         
     </style>
-</head>
+</head> 
 <div id="nav">
     <div id="HP"><a href="http://127.0.0.1:5500/ashray/landing_pg_v0.1/landing_page%200.1.html"><img style="margin-top: 20px;" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
     <div id="onc"><a href="http://127.0.0.1:5500/uday/online_course.html"><p>Online Courses</p></a></div>
@@ -147,6 +153,7 @@
 
 
 
+
 <body id="rw_body">
     <div id="rw_top">
         <h1>Helping you work, teach and learn form<br> anywhere</h1>
@@ -155,10 +162,10 @@
              To help, <br>we’ve gathered some tools and resources you can use to stay connected and productive.</p>
     </div>
     <div id="rw_anywhereparent">
-        <div id="rw_anywhere" >WORK FROM ANYWHERE</div>
-        <div id="rw_anywhere">RUN YOUR BUSSINESS FROM ANYWHERE</div>
-        <div id="rw_anywhere">TEACH FROM ANYWHERE</div>
-        <div id="rw_anywhere">LEARN FROM ANYWHERE</div>
+        <div id="rw_anywhere" ><a href="#rw_work0">WORK FROM ANYWHERE</a></div>
+        <div id="rw_anywhere"><a href="#rw_work11">RUN YOUR BUSSINESS FROM ANYWHERE</a></div>
+        <div id="rw_anywhere"><a href="#rw_work12">TEACH FROM ANYWHERE</a></div>
+        <div id="rw_anywhere"><a href="#rw_work13">LEARN FROM ANYWHERE</a></div>
     </div>
     <div id="rw_work">
       <div id="rw_work0">
@@ -180,7 +187,7 @@
     <div id="rw_work">
       <div id="rw_workimg"><img  style="height: 550px;"  src="https://i.pinimg.com/originals/ff/fc/6f/fffc6f30b50c132cdd888ce005f093f1.jpg"/></div>
         <div id="rw_work0">
-          <div id="rw_work1" ><h1 >Run your business from anywhere</h1>Put the right tools and practices in place to
+          <div id="rw_work1" ><h1 id="rw_work11" >Run your business from anywhere</h1>Put the right tools and practices in place to
              make sure your business is running smoothly, your teams are connected, and your customers stay happy.</div>
               
           <div id="rw_work2">Work faster, work smarter with G-suit</div>
@@ -195,8 +202,8 @@
 
           <div style="width: 80vw; clear:both;  "></div>
       <div id="rw_work">
-        <div id="rw_work0">
-          <div id="rw_work1" ><h1 >Teach from anywhere</h1>Explore ways to keep students engaged
+        <div id="rw_work0" ><p id="rw_work12"></p>
+          <div id="rw_work1" ><h1>Teach from anywhere</h1>Explore ways to keep students engaged
              through distance learning resources for educators.</div>                      
           <div id="rw_work2">Expolre resources for distance learning</div>
           <div id="rw_work3">Learn to use digital tools in your lesson plans</div>
@@ -213,8 +220,8 @@
 
       <div id="rw_work">
         <div id="rw_workimg"><img style="height: 500px;" src="https://simg.nicepng.com/png/small/258-2585445_happy-girl-with-laptop-professional-girl-image-png.png"/></div>
-        <div id="rw_work0">
-          <div id="rw_work1" ><h1 >Learn from anywhere</h1>Keep learning new skills to develop personally
+        <div id="rw_work0" >
+          <div id="rw_work1" ><h1 id="rw_work13">Learn from anywhere</h1>Keep learning new skills to develop personally
              and professionally, wherever you are.</div>
               
           <div id="rw_work2">Start learning new skill online for free</div>
