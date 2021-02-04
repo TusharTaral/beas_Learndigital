@@ -23,6 +23,7 @@
             margin: 30px;
             cursor: pointer;
             border: none;
+            
 
         }
         #rw_anywhere:hover{
@@ -49,12 +50,16 @@
                width: 90%;
                margin-left: 150px;
                margin-bottom: 1px;
+               color: rgb(61, 58, 58);
         }
         #rw_work0>div{
             width: 400px;           
             margin: 50px;
-            font-family: Arial, Helvetica, sans-serif;
-         
+                     
+        }
+        #rw_work1{
+          font-family: Arial, Helvetica, sans-serif;
+            color: rgb(48, 46, 46);
         }
         #rw_work0{
             width: 40%;
@@ -77,10 +82,71 @@
             text-align: right;
             float: right;
         }
-        
+        #nav{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template: "HP onc crt lit rw mr btn1 btn2";
+        }
+        #nav>div>img{
+            width: 300px;
+        }
+        #nav>div>p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #btn1{
+            border: 0px;
+            background-color: white;
+            color: teal;
+            font-size: 20px;
+        }
+        #btn2{
+            border: 0px;
+            background-color: rgb(5, 55, 89);
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            border-radius: 5px;
+            height: 50px;
+        }
+        select{
+            width: 20px;
+            border: 0px;
+        }
+        #crt,#onc{
+            margin-top: 10px;
+            
+        }
+        #crt>a,#onc>a{
+            text-decoration: none;
+        }
+        #rw_work2:hover,#rw_work3:hover,#rw_work4:hover,#rw_work5:hover,#rw_work6:hover,#rw_work7:hover{
+             color: red;
+             cursor: pointer;
+        }
         
     </style>
 </head>
+<div id="nav">
+    <div id="HP"><a href="http://127.0.0.1:5500/ashray/landing_pg_v0.1/landing_page%200.1.html"><img style="margin-top: 20px;" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
+    <div id="onc"><a href="http://127.0.0.1:5500/uday/online_course.html"><p>Online Courses</p></a></div>
+    <div id="crt"><a href="http://127.0.0.1:5500/uday/FODM.html"><p>Certification</p></a></div>
+    <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/live_training.html"><p>Live Training</p></a></div>
+    <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/remote_working.html"><p>Remote Working</p></a></div>
+    <div id="crt"><p> More <select name="  more " id="select">
+        <option>Tools and Resources</option>
+        <option>Help and FAQs</option>
+        <option>Feedback</option>
+    </select></p></div>
+    <button id="btn1">Sign in</button>
+    <button id="btn2">REGISTER</button>
+</div>
+
+
+
+
 <body id="rw_body">
     <div id="rw_top">
         <h1>Helping you work, teach and learn form<br> anywhere</h1>
@@ -96,7 +162,7 @@
     </div>
     <div id="rw_work">
       <div id="rw_work0">
-        <div id="rw_work1" style="color: black;"><h1 >Work from anywhere</h1>These resources will help you and your teams to communicate and<br>
+        <div id="rw_work1" ><h1 >Work from anywhere</h1>These resources will help you and your teams to communicate and<br>
              collaborate effectively, even when you’re not together in person.</div>
             
         <div id="rw_work2">Start using tools for better remote working</div>
@@ -114,7 +180,7 @@
     <div id="rw_work">
       <div id="rw_workimg"><img  style="height: 550px;"  src="https://i.pinimg.com/originals/ff/fc/6f/fffc6f30b50c132cdd888ce005f093f1.jpg"/></div>
         <div id="rw_work0">
-          <div id="rw_work1" style="color: black;"><h1 >Run your business from anywhere</h1>Put the right tools and practices in place to
+          <div id="rw_work1" ><h1 >Run your business from anywhere</h1>Put the right tools and practices in place to
              make sure your business is running smoothly, your teams are connected, and your customers stay happy.</div>
               
           <div id="rw_work2">Work faster, work smarter with G-suit</div>
@@ -130,7 +196,7 @@
           <div style="width: 80vw; clear:both;  "></div>
       <div id="rw_work">
         <div id="rw_work0">
-          <div id="rw_work1" style="color: black;"><h1 >Teach from anywhere</h1>Explore ways to keep students engaged
+          <div id="rw_work1" ><h1 >Teach from anywhere</h1>Explore ways to keep students engaged
              through distance learning resources for educators.</div>                      
           <div id="rw_work2">Expolre resources for distance learning</div>
           <div id="rw_work3">Learn to use digital tools in your lesson plans</div>
@@ -148,7 +214,7 @@
       <div id="rw_work">
         <div id="rw_workimg"><img style="height: 500px;" src="https://simg.nicepng.com/png/small/258-2585445_happy-girl-with-laptop-professional-girl-image-png.png"/></div>
         <div id="rw_work0">
-          <div id="rw_work1" style="color: black;"><h1 >Learn from anywhere</h1>Keep learning new skills to develop personally
+          <div id="rw_work1" ><h1 >Learn from anywhere</h1>Keep learning new skills to develop personally
              and professionally, wherever you are.</div>
               
           <div id="rw_work2">Start learning new skill online for free</div>
@@ -164,7 +230,7 @@
     
       <div id="lt_footer"><h1>A Grow with Google  Programme</h1>
         <label id="lt_country">: Privacy & Term </label>
-          <select id="lt_country">
+          <select id="lt_country" style="width: auto;"> India
               <option>India</option>
               <option>Japan</option>
               <option>USA</option>
