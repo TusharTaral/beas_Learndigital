@@ -6,6 +6,7 @@
             display: grid;
             grid-template: "HP onc crt lit rw mr btn1 btn2";
             font-family: 'Open Sans', sans-serif;
+            position: fixed;
         }
         /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (max-width: 900px) {
@@ -36,8 +37,8 @@
             color:  rgb(82, 82, 255);
             font-size: 17px;
             font-weight: 500;
-            margin-top: 0;
-            height: 53px;
+            margin-top:15px;
+            height: 40px;
             
         }
         #btn2{
@@ -58,6 +59,11 @@
         }
         #crt,#onc{
             margin-top: 10px;
+        }
+        #nav_bar_logo{
+            width: 60%;
+            height: auto;
+            margin:3%
         }
 
 
