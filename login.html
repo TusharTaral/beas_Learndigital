@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        #login {
+            width: 100%;
+        }
+
+        #loginCont-1 {
+            width: 100%;
+            height: 300px;
+            background-color: white;
+        }
+
+        #btm {
+            width: 100%;
+            height: 150px;
+            margin-top: 100px;
+
+        }
+
+        #btm1 {
+            width: 100%;
+            height: 150px;
+            background-color: white;
+            display: grid;
+            grid-template: "img1 text1";
+        }
+
+        #img1>img {
+            width: 70%;
+            height: 50px;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        #text1>p {
+            margin-top: 60px;
+            text-align: right;
+            margin-right: 100px;
+        }
+
+        #btm2 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+        }
+
+        #btm-l {
+            width: 100%;
+            height: 1px;
+            background-color: rgb(82, 78, 78);
+        }
+
+        #text1>p>select {
+            width: 150px;
+        }
+
+        #btm>#btm2>div {
+            float: right;
+            width: 450px;
+            height: 50px;
+        }
+
+        #btm>#btm2>div>p>img {
+            width: 50px;
+            height: 50px;
+            margin: 0px 40px;
+        }
+
+        #box-1 {
+            width: 100%;
+            height: 250px;
+            color: black;
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        .line-1 {
+            width: 50%;
+            margin-left: 150px;
+            float: left;
+            margin-top: 40px;
+        }
+
+        #box-1>.line-1>h1 {
+            font-size: 40px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box-1>.line-1>h4 {
+            font-size: 16px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+
+        #loginCont-2>div {
+            width: 200px;
+            height: 50px;
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+
+        #loginCont-2>.signin_google>button {
+            width: 60%;
+            height: 100%;
+        }
+
+        #loginCont-2>.signin_google>img {
+            width: 20%;
+            height: 60%;
+        }
+
+        #loginCont-2>.signin_google {
+            display: grid;
+            grid-template-columns: "img button";
+        }
+
+        #blank {
+            width: 25%;
+            height: 50px;
+            float: left;
+            background-color: white;
+        }
+
+        #loginCont-2 {
+            width: 35%;
+            margin-top: 50px;
+            margin-left: 25%;
+            margin-left: 32%;
+        }
+
+        #loginPage {
+            width: 50%;
+            height: 500px;
+            float: left;
+            background-color: white;
+            border-style: ridge;
+        }
+
+        #loginPage>#loginCont-2>button {
+
+            background-color: white;
+            border-radius: 5px;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        #loginPage>#loginCont-2>button>div:nth-child(1)>img {
+            width: 30px;
+            height: 30px;
+            margin-top: 8px;
+        }
+
+        #loginPage>#loginCont-2>button>div:nth-child(2)>p {
+            margin-left: 20px;
+            font-size: 16px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+
+        #loginCont-3 {
+            width: 55%;
+            text-align: center;
+            margin-left: 22.5%;
+            font-size: 16px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+
+        #loginCont-3>p>span {
+            color: turquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login">
+        <div id="loginCont-1">
+            <div id="box-1">
+                <div class="line-1">
+                    <h1>Login information</h1>
+                    <h4>Create an account and enjoy access to free online lessons and face-to-face workshops.
+                    </h4>
+                </div>
+            </div>
+            <div id="blank"></div>
+            <div id="loginPage">
+                <div id="loginCont-2">
+                    <button>
+                        <div><img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt=""></div>
+                        <div>
+                            <p>sign in with google</p>
+                        </div>
+                    </button>
+                    <button style="background-color: rgb(243, 46, 11);">
+                        <div><img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/mail.svg" alt=""></div>
+                        <div>
+                            <p style="color: black;">sign in with google</p>
+                        </div>
+                    </button>
+                </div>
+                <div id="loginCont-3">
+                    <p>By continuing, you are indicating that you accept our <span>Terms of Service</span> and
+                        <span>Privacy Policy.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="btm">
+        <div id="btm1">
+            <div id="img1"><img
+                    src="https://lh3.googleusercontent.com/7NabP8N3VdnHYt17iVcUvF_Hr2lFg-ayg1YnYIrvtWCtt-RtrnwVUzLZRUT3DSg3IkZHGqEte1v-_E590aB_AC0uCA-xthGO0d1YAA=h30-w377"
+                    alt=""></div>
+            <div id="text1">
+                <p>Privacy & Terms <select name="" id="">
+                        <option value="">United Kingdom</option>
+                        <option value="">Suomi</option>
+                        <option value="">India</option>
+                        <option value="">Romania</option>
+                        <option value="">Sussi</option>
+                        <option value="">Ireland</option>
+                        <option value="">France</option>
+                    </select></p>
+            </div>
+        </div>
+        <div id="btm-l"></div>
+        <div id="btm2">
+
+            <div>
+                <p>Share<img
+                        src="https://lh3.googleusercontent.com/sw4rOkreSopt2DcXlOCH9HPwHm7pPgeBsO8DFqWnnVPifC4473ztUcLCT49kDnDj5c-ClaRCOQKmBvbrzqICFq7yNgcqq8-byBV0aw=h48-w48"
+                        alt=""><img
+                        src="https://lh3.googleusercontent.com/O73TcAUC463DfCnA87ap5gw7uWPW2R6owA8p-jcmHYJuysd2BVT_W-1PzUdxk_kbzjQ-OHuTt4W1i3N4hi_KtCkBifUtpZFPlz4R=h48-w55"
+                        alt=""><img
+                        src="https://lh3.googleusercontent.com/2PFoqNpZ5xu9JK1u_CRR0aiYqGb0K6cOKkzmS2Ux0rucddJgNeMwsniGFMzQWopCdNK9rBzq73N0188sAtK_UFpgUHPPgz2XyDG5=h48-w48"
+                        alt=""></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
