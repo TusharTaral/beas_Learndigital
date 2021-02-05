@@ -6,6 +6,9 @@
     <title></title>
     <link rel="stylesheet" href="navigation_style.css">
     <link rel="stylesheet" href="live_training_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="fodm.css"> -->
     <style>
         #data_and_tech_box:hover{
             background-color: rgb(207, 26, 26);
@@ -42,10 +45,26 @@
             font-weight: 400;
         }
         #get_started_cont{
-            display: flex;
+            display: grid;
+            grid-template: "a b" ;
             margin-bottom: 0%;
-            
         }
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 768px) {
+            #get_started_cont{
+                grid-template: "a" "b" ;
+            }
+            #get_started_cont > div:nth-child(2) > img{
+                width: 100%;
+            }
+        } 
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 768px) {
+            #get_started_cont > div:nth-child(2) > img{
+                width: 160%;
+            }
+        } 
+        
         #get_started_cont > div:nth-child(1){
             margin-top: 3%;
             margin-left: 2%;
@@ -92,6 +111,7 @@
             color: rgba(0, 0, 0, 0.87);
             display: flex;
             flex-direction: row;
+            flex-grow: 1;
             flex-wrap: wrap;
             font-family: "Google Sans", Arial, sans-serif;
             margin:25px;
@@ -104,6 +124,7 @@
             box-shadow: 0 0 12px 2px rgb(0 0 0 / 2%);
             border-radius: 35px;
             display: flex;
+            flex-grow: 10;
             flex-direction: column;
             padding:10px;
             font-weight: 500;
@@ -130,27 +151,51 @@
         #browse_couses_cont{
             display: grid;
             grid-template: "a b";
-            gap: 10px
+            gap: 10px;
+            margin-bottom: 110px;
         }
-        #browse_couses_cont > div:nth-child(1)>img{
-            width: 650px;
-            height: 450px;
+        @media only screen and (max-width: 768px) {
+            #browse_couses_cont{
+                grid: "a" "b";
+            }
+        } 
         
+
+        #browse_couses_cont > div:nth-child(1)>img{
+            width: 100%;
+            height: 100%;
+            
+            ;
+        }
+        #browse_couses_cont > div:nth-child(1){
+            width: 100%;
+            height: 100%;
         }
         #browse_couses_cont > div:nth-child(2) {
-            padding: 50px 59px;
+            margin: 50px 59px;
+            max-height: 100%;
+            margin-left: 100px;
+            
+            
         }
         #browse_couses_cont > div:nth-child(2) > p{
             margin-bottom: 40px;   
         }
         #simple_steps_cont{
             width: 100%;
-            height: 200px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            height: 100%;
+            display: grid;
+            grid-template: "a b c" ;
             margin: 50px 0px;
         }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+
+        @media only screen and (max-width: 768px) {
+            #simple_steps_cont{
+                grid-template:"a" "b" "c" ;
+            }
+        } 
         #simple_steps_cont > div{
             flex-grow: 1;
             padding: 2%;
@@ -167,11 +212,21 @@
         #learn_online{
             text-align: center;
             background-color:whitesmoke;
-            height: 800px;
+            height: auto ;
             display: grid;
             grid-gap: 3%;
             grid-template: "a_1 b_1 c_1"
                         "a_2 b_2 c_2" ;
+        }
+
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (max-width: 768px) {
+            #learn_online{
+                grid-template: "a_1" "b_1" "c_1"
+                        "a_2" "b_2" "c_2";
+                grid-gap:0% ;
+            }
         }
         
         #learn_online_heading{
@@ -212,6 +267,7 @@
         #b_2{
             grid-area: b_2;
             
+            
         }
         #c_3{
             grid-area: c_2;
@@ -229,6 +285,7 @@
             background-color: whitesmoke;
             padding-bottom: 40px;
             font-weight: 500;
+            
         }
         #lp_live_training_cont{
             height: 1084px;
@@ -243,9 +300,14 @@
         #section_programmes_grid{
             display: grid;
             grid-template: "h1 h2 h3" ;
-            padding: 0 5px 0 0
+            padding: 0 5px 0 0;
             
         }
+        @media only screen and (max-width: 768px) {
+            #section_programmes_grid{
+                grid-template:"a" "b" "c" ;
+            }
+        } 
         #section_programmes_grid > div {
             width: 250px;
             height: 330px;
@@ -353,7 +415,6 @@
         
         
         
-        
     </style>
 
 </head>
@@ -370,7 +431,7 @@
             <option>Feedback</option>
         </select></p></div>
         <button id="btn1">Sign in</button>
-        <button id="btn2">REGISTER</button>
+        <button id="btn2">Register</button>
     </div>
 
     <div class="promo_bar body_color soft_color">Join a live training for free and learn a new skill today</div>
@@ -403,6 +464,7 @@
         </ul>
     </div>
 
+
     <div id="browse_couses_cont">
         <div><img src="https://lh3.googleusercontent.com/N0i4GLmSJAbQGObrzvVzqXj0w7OtazRddKyAvVrdT83nDpIGg4qgEJqPOoFHfBMaqfs8Vc4akuHLfL4zc0HGb8UKTN5c9n5j4Wu_hA=h943-w1412" alt=""></div>
         <div>
@@ -410,8 +472,9 @@
             <p class="soft_color">The majority of the courses are free, and approved by industry experts, top entrepreneurs and some of the world’s leading employers. So you can be sure that you’re learning up-to-date, real-world skills that help you reach your goal.</p>
             <a href="http://127.0.0.1:5500/uday/FODM.html">Browse Courses</a>
         </div>
-
     </div>
+
+
     <div id="simple_steps_cont">
          <div >
             <div> <img src="https://lh3.googleusercontent.com/mtCqnQv6kLOjll-APlF2WKcVo3jVywLGuLYFWdI-VyjhG-X1-_TD9KB66DmCa5NSrHHSTzNA5HPH-sfOyjO1tyxCuBerda6KxAgOiA=h176-w176" alt=""/></div>
@@ -450,6 +513,7 @@
         <div class="b_2"><img src="https://lh3.googleusercontent.com/Rg2n9Zxwt6ICy6krCNZeZMi9v0jrcTaszOAKMueQRNiqU9NFOqcA6N-kcFoucHknlKG2M4EY8q2c9Nd37IaYpENdc2H1TpicmGf0lA=h380-w654" alt=""><h4>Create a long-term social media plan </h4><a id="a_get_started" href="online_course.html">Get Started</a></div>
         <div class="c_2"><img src="https://lh3.googleusercontent.com/8rsdIeVH8dqHwwQdQRnnX7y7sotSgK5Bsb66meTwqpU5BFJJlZ2hH-PVK9vWvt4x57e0NIQwKEHUWTvOozsg6yHhboEYqZZHZPE1pw=h380-w654" alt=""><h4>Learn how to export and expand your business internationally</h4> <a id="a_get_started" href="online_course.html">Get Started</a></div>
     </div>
+    <div style="background-color: whitesmoke ; height: 75px;"></div>
     <div id="see_more_topic"><a id="see_more_topic" href="online_course.html">See More Topics</a></div>
 
     <hr/>
