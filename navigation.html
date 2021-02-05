@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav {
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template: "HP onc crt lit rw mr btn1 btn2";
+        }
+
+        #nav>div>img {
+            width: 300px;
+        }
+
+        #nav>div>p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #btn1 {
+            border: 0px;
+            background-color: white;
+            color: teal;
+            font-size: 20px;
+        }
+
+        #btn2 {
+            border: 0px;
+            background-color: rgb(5, 55, 89);
+            color: white;
+            font-family: sans-serif;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        select {
+            width: 20px;
+            border: 0px;
+        }
+
+        #crt,
+        #onc {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="HP"><img
+                src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng"
+                alt=""></div>
+        <div id="onc"><a href="D:\masai course\project-1\online_course.html">
+                <p>Online Courses</p>
+            </a></div>
+        <div id="crt"><a href="">
+                <p>Certification</p>
+            </a></div>
+        <div id="crt"><a href="">
+                <p>Live Training</p>
+            </a></div>
+        <div id="crt"><a href="">
+                <p>Remote Working</p>
+            </a></div>
+        <div id="crt">
+            <p>More<select name="more" id="select"></select></p>
+        </div>
+        <button id="btn1"><a style="color: teal;" href="file:///D:/masai%20course/project-1/login.html">Sign in</a></button>
+        <button id="btn2"><a style="color: white;" href="file:///D:/masai%20course/project-1/login.html">REGISTER</a></button>
+    </div>
+</body>
+
+</html>
