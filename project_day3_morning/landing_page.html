@@ -294,8 +294,62 @@
             height: 50px;
             background-color: whitesmoke;
         }
-        
-        
+        #lt_footer{
+            width: 90vw;
+            height: 100px;
+            background-color: white;
+            float: left;
+            margin-top:40px;
+            padding: 20px;
+            color: rgb(138, 133, 133);
+        }
+        #lt_country{
+            text-align: right;
+            float: right;
+        }
+        #nav{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template: "HP onc crt lit rw mr btn1 btn2";
+            position: fixed;
+            
+        }
+        #nav>div>img{
+            width: 300px;
+        }
+        #nav>div>p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #btn1{
+            border: 0px;
+            background-color: white;
+            color: teal;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+        #btn2{
+            border: 0px;
+            background-color: rgb(5, 55, 89);
+            color: white;
+            font-family: sans-serif;
+            font-size: 25px;
+            border-radius: 5px;
+            height: 50px;
+        }
+        select{
+            width: 20px;
+            border: 0px;
+        }
+        #crt,#onc{
+            margin-top: 10px;
+            
+        }
+        #crt>a,#onc>a{
+            text-decoration: none;
+        }
         
         
         
@@ -305,12 +359,16 @@
 </head>
 <body>
     <div id="nav">
-        <div id="HP"><img src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></div>
-        <div id="onc"><a href="online_course.html"><p>Online Courses</p></a></div>
-        <div id="crt"><a href="FODM.html"><p>Certification</p></a></div>
-        <div id="crt"><a href="live_training.html"><p>Live Training</p></a></div>
-        <div id="crt"><a href="remote_working.html"><p>Remote Working</p></a></div>
-        <div id="crt"><p>More<select name="more" id="select"></select></p></div>
+        <div id="HP"><a href="http://127.0.0.1:5500/project_day3_morning/landing_page.html"><img style="margin-top: 20px; width: 300px;" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
+        <div id="onc"><a href="http://127.0.0.1:5500/uday/online_course.html"><p>Online Courses</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/uday/FODM.html"><p>Certification</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/live_training.html"><p>Live Training</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/remote_working.html"><p>Remote Working</p></a></div>
+        <div id="crt"><p> More <select name="  more " id="select">
+            <option>Tools and Resources</option>
+            <option>Help and FAQs</option>
+            <option>Feedback</option>
+        </select></p></div>
         <button id="btn1">Sign in</button>
         <button id="btn2">REGISTER</button>
     </div>
@@ -350,7 +408,7 @@
         <div>
             <h1>Why learn with Google</h1>
             <p class="soft_color">The majority of the courses are free, and approved by industry experts, top entrepreneurs and some of the world’s leading employers. So you can be sure that you’re learning up-to-date, real-world skills that help you reach your goal.</p>
-            <a href="online_course.html">Browse Courses</a>
+            <a href="http://127.0.0.1:5500/uday/FODM.html">Browse Courses</a>
         </div>
 
     </div>
@@ -421,9 +479,28 @@
                  <h5 id="h_5" style="padding: 8% 0 0 2% ; ">FOR YOUR BUSINESS</h5>
             </div>
         </div>
-    </di>
+    </div>
     
     
+
+    <div id="lt_footer"><h1>A Grow with Google  Programme</h1>
+        <label id="lt_country">: Privacy & Term </label>
+          <select id="lt_country" style="width: auto;"> India
+              <option>India</option>
+              <option>Japan</option>
+              <option>USA</option>
+              <option>Israel</option>
+              <option>UK</option>
+              <option>Sweden</option>
+              <option>Netherland</option>
+              <option>Iran</option>
+              <option>Republic of congo</option>
+              <option>Bangladesh</option>
+              <option>China</option>
+              <option>Germany</option>
+              <option>France</option>
+          </select>
+    </div>
 
     
 </body>
