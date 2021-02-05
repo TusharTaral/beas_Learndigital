@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Working</title>
+    <style>
+        #rw_body{
+            background-color: whitesmoke;
+        }
+        #rw_top{ 
+            width: 80vw;
+            height: 200px;
+            text-align: center;
+            font-size: larger;
+            padding: 80px 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(112, 108, 108);
+        }
+        #rw_anywhere,#rw_anywhere1,#rw_anywhere2,#rw_anywhere3{
+            float: left;
+            margin: 30px;
+            cursor: pointer;
+            border: none;
+            
+
+        }
+        #rw_anywhere:hover{
+            color: rgb(30, 30, 61);
+        }
+        
+        #rw_anywhereparent{
+            background-color: white;
+            text-align: center;
+            padding-left: 100px;
+        }
+        #rw_workimg{
+            float: left;
+            width: 40%;
+            margin: 50px;
+            height: 650px;
+           
+        }
+        #rw_workimg>img{
+            width: auto;
+            height: 620px;
+        }
+        #rw_work{
+               width: 90%;
+               margin-left: 150px;
+               margin-bottom: 1px;
+               color: rgb(61, 58, 58);
+        }
+        #rw_work0>div{
+            width: 400px;           
+            margin: 50px;
+                     
+        }
+        #rw_work1{
+          font-family: Arial, Helvetica, sans-serif;
+            color: rgb(48, 46, 46);
+        }
+        #rw_work0{
+            width: 40%;
+            background-color: whitesmoke;
+            float: left;
+            color: blue;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #lt_footer{
+            width: 90vw;
+            height: 100px;
+            background-color: white;
+            float: left;
+            margin-top:-80px;
+            padding: 20px;
+            color: rgb(138, 133, 133);
+        }
+        #lt_country{
+            text-align: right;
+            float: right;
+        }
+        #nav{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template: "HP onc crt lit rw mr btn1 btn2";
+            position: fixed;
+            padding-bottom: 20px;
+            margin-top: -10px;
+        }
+        #nav>div>img{
+            width: 300px;
+        }
+        #nav>div>p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #btn1{
+            border: 0px;
+            background-color: white;
+            color: teal;
+            font-size: 20px;
+        }
+        #btn2{
+            border: 0px;
+            background-color: rgb(5, 55, 89);
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            border-radius: 5px;
+            height: 50px;
+        }
+        select{
+            width: 20px;
+            border: 0px;
+        }
+        #crt,#onc{
+            margin-top: 10px;
+            
+        }
+        #crt>a,#onc>a{
+            text-decoration: none;
+        }
+        #rw_work2:hover,#rw_work3:hover,#rw_work4:hover,#rw_work5:hover,#rw_work6:hover,#rw_work7:hover{
+             color: red;
+             cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+    </style>
+</head> 
+<div id="nav">
+    <div id="HP"><a href="http://127.0.0.1:5500/project_day3_morning/landing_page.html"><img style="margin-top: 20px;" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
+    <div id="onc"><a href="http://127.0.0.1:5500/uday/online_course.html"><p>Online Courses</p></a></div>
+    <div id="crt"><a href="http://127.0.0.1:5500/uday/FODM.html"><p>Certification</p></a></div>
+    <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/live_training.html"><p>Live Training</p></a></div>
+    <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/remote_working.html"><p>Remote Working</p></a></div>
+    <div id="crt"><p> More <select name="  more " id="select">
+        <option>Tools and Resources</option>
+        <option>Help and FAQs</option>
+        <option>Feedback</option>
+    </select></p></div>
+    <a href="http://127.0.0.1:5500/final/login.html" style="text-decoration: none;"> <p id="btn1">Sign in</p></a>
+    <a href="http://127.0.0.1:5500/final/login.html"> <button id="btn2">REGISTER</button></a>
+</div>
+
+
+
+
+
+<body id="rw_body">
+    <div id="rw_top">
+        <h1>Helping you work, teach and learn form<br> anywhere</h1>
+        <p>
+            In today's environment, more employees, educators, and students are working remotely.
+             To help, <br>we’ve gathered some tools and resources you can use to stay connected and productive.</p>
+    </div>
+    <div id="rw_anywhereparent">
+        <div id="rw_anywhere" ><a href="#rw_work0">WORK FROM ANYWHERE</a></div>
+        <div id="rw_anywhere"><a href="#rw_work11">RUN YOUR BUSSINESS FROM ANYWHERE</a></div>
+        <div id="rw_anywhere"><a href="#rw_work12">TEACH FROM ANYWHERE</a></div>
+        <div id="rw_anywhere"><a href="#rw_work13">LEARN FROM ANYWHERE</a></div>
+    </div>
+    <div id="rw_work">
+      <div id="rw_work0">
+        <div id="rw_work1" ><h1 >Work from anywhere</h1>These resources will help you and your teams to communicate and<br>
+             collaborate effectively, even when you’re not together in person.</div>
+            
+        <div id="rw_work2">Start using tools for better remote working</div>
+        <div id="rw_work3">Communicate effectively, from wherever you are</div>
+        <div id="rw_work4">Collaborate with other while working remotely</div>
+        <div id="rw_work5">Learn to schedule, prepare for, and run a successfull meeting</div>
+        <div id="rw_work6">4 tips for staying productive when working from home</div>
+        <div id="rw_work7">6 tips for better video calls when working from home</div>
+      </div> 
+      <div id="rw_workimg"><img src="https://i.pinimg.com/736x/7f/cd/fa/7fcdfa9330dec145335623d389051ab8.jpg"/></div>
+
+    </div>
+
+
+    <div id="rw_work">
+      <div id="rw_workimg"><img  style="height: 550px;"  src="https://i.pinimg.com/originals/ff/fc/6f/fffc6f30b50c132cdd888ce005f093f1.jpg"/></div>
+        <div id="rw_work0">
+          <div id="rw_work1" ><h1 id="rw_work11" >Run your business from anywhere</h1>Put the right tools and practices in place to
+             make sure your business is running smoothly, your teams are connected, and your customers stay happy.</div>
+              
+          <div id="rw_work2">Work faster, work smarter with G-suit</div>
+          <div id="rw_work3">Keep costomers informed through Google my bussiness</div>
+          <div id="rw_work4">A glide to hosting virtual event on YouTube</div>
+          <div id="rw_work5">Achieve balance and flexible workforce </div>
+          <div id="rw_work6">3 things we're consideringas we rethink live events</div>
+        </div> 
+        
+  
+      </div>
+
+          <div style="width: 80vw; clear:both;  "></div>
+      <div id="rw_work">
+        <div id="rw_work0" ><p id="rw_work12"></p>
+          <div id="rw_work1" ><h1>Teach from anywhere</h1>Explore ways to keep students engaged
+             through distance learning resources for educators.</div>                      
+          <div id="rw_work2">Expolre resources for distance learning</div>
+          <div id="rw_work3">Learn to use digital tools in your lesson plans</div>
+          <div id="rw_work4">Share information by creating interactive presentation</div>
+          <div id="rw_work5">Test yourself and other by creating quiz in Google forms</div>
+          <div id="rw_work6">Use comment in Google doc's to give feedback on work</div>
+                   
+        </div> 
+        
+        <div id="rw_workimg"><img src="https://images.squarespace-cdn.com/content/v1/5a1bacd79f8dce42bdccfcd3/1584811574024-RA63DBWQKFS3VYOGHWY7/ke17ZwdGBToddI8pDm48kNO2SymwcR0CNt03aX8zdCd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmyh-8_5GJNvrfz4o4yOfLS6zQbzUiTKHw9oGJVKerm66NTpMeMsHjVpXC93GFBavO/IMG_1746.JPG?format=1000w"/></div>
+  
+      </div>
+
+
+      <div id="rw_work">
+        <div id="rw_workimg"><img style="height: 500px;" src="https://simg.nicepng.com/png/small/258-2585445_happy-girl-with-laptop-professional-girl-image-png.png"/></div>
+        <div id="rw_work0" >
+          <div id="rw_work1" ><h1 id="rw_work13">Learn from anywhere</h1>Keep learning new skills to develop personally
+             and professionally, wherever you are.</div>
+              
+          <div id="rw_work2">Start learning new skill online for free</div>
+          <div id="rw_work3">Take bite-size bussiness and Marketing lesson</div>
+          <div id="rw_work4">Begin coding through quick lesson on your mobile</div>
+          <div id="rw_work5">Get organised with Google  Drive</div>
+        </div> 
+        
+        
+  
+      </div>
+
+    
+      <div id="lt_footer"><h1>A Grow with Google  Programme</h1>
+        <label id="lt_country">: Privacy & Term </label>
+          <select id="lt_country" style="width: auto;"> India
+              <option>India</option>
+              <option>Japan</option>
+              <option>USA</option>
+              <option>Israel</option>
+              <option>UK</option>
+              <option>Sweden</option>
+              <option>Netherland</option>
+              <option>Iran</option>
+              <option>Republic of congo</option>
+              <option>Bangladesh</option>
+              <option>China</option>
+              <option>Germany</option>
+              <option>France</option>
+          </select>
+    </div>
+
+
+    <!-- <script>
+        var anywhere=document.getElementById("rw_anywhere")
+     
+        function selecttext(e){
+            anywhere.style.color="blue"
+        }
+        function originalcol(e){
+            anywhere.style.color="black"
+        }
+        anywhere.addEventListener("mouseover",selecttext)
+        anywhere.addEventListener("mouseleave",originalcol)
+       
+    </script>  -->
+</body>
+</html>
