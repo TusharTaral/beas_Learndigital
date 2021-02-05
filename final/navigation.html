@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template: "HP onc crt lit rw mr btn1 btn2";
+            position: fixed;
+            padding-bottom: 20px;
+            margin-top: -20px;
+        }
+        #nav>div>img{
+            width: 300px;
+        }
+        #nav>div>p{ 
+            text-align: center;
+            margin-top: 10px;
+        }
+        #btn1{
+            border: 0px;
+            background-color: white;
+            color: teal;
+            font-size: 20px;
+        }
+        #btn2{
+            border: 0px;
+            background-color: rgb(5, 55, 89);
+            color: white;
+            font-family: sans-serif;
+            font-size: 25px;
+            border-radius: 5px;
+            height: 50px;
+        }
+        select{
+            width: 20px;
+            border: 0px;
+        }
+        #crt,#onc{
+            margin-top: 10px;
+            
+        }
+        #crt>a,#onc>a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="HP"><a href="http://127.0.0.1:5500/ashray/landing_pg_v0.1/landing_page%200.1.html"><img style="margin-top: 20px; width: 300px;" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
+        <div id="onc"><a href="http://127.0.0.1:5500/uday/online_course.html"><p>Online Courses</p></a></div>
+        <div id="crt"><a href=""><p>Certification</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/live_training.html"><p>Live Training</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/remote_working.html"><p>Remote Working</p></a></div>
+        <div id="crt"><p> More <select name="  more " id="select">
+            <option>Tools and Resources</option>
+            <option>Help and FAQs</option>
+            <option>Feedback</option>
+        </select></p></div>
+        <a href="http://127.0.0.1:5500/project_day3_morning/login.html" style="text-decoration: none;"> <p id="btn1">Sign in</p></a>
+        <a href="http://127.0.0.1:5500/project_day3_morning/login.html"> <button id="btn2">REGISTER</button></a>
+    </div>
+</body>
+</html>
+
