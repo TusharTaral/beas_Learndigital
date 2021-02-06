@@ -35,13 +35,14 @@
             font-weight: 400;
         }
         #get_started_cont{
-            display: flex;
+            display: grid;
+            grid-template:"a b" ;
             margin-bottom: 0%;
         }
         /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (max-width: 768px) {
             #get_started_cont{
-                flex-direction: row-reverse;
+                grid-template:"a" "b" ;
             }
             #get_started_cont > div:nth-child(2) > img{
                 width: 100%;
