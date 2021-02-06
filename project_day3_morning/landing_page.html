@@ -34,7 +34,7 @@
             height:55px;
             padding: 19px 30px;
             text-size-adjust: 100%;
-            font-size: 14px;
+            font-size: 15px;
             text-align: center;
             font-weight: 900;
         }
@@ -292,7 +292,7 @@
             border: 2px solid red;
         }
         #section_programmes{
-            height: 550px;
+            height: 100%;
             background-color: whitesmoke;
             text-align: center;
             
@@ -369,49 +369,14 @@
             text-align: right;
             float: right;
         }
-        #nav{
-            background-color: white;
-            width: 100%;
-            height: 50px;
-            display: grid;
-            grid-template: "HP onc crt lit rw mr btn1 btn2";
-            position: fixed;
-            
-        }
-        #nav>div>img{
-            width: 300px;
-        }
-        #nav>div>p{
-            text-align: center;
-            margin-top: 10px;
-        }
-        #btn1{
-            border: 0px;
-            background-color: white;
-            color: teal;
-            font-size: 20px;
-            margin-bottom: 18px;
-        }
-        #btn2{
-            border: 0px;
-            background-color: rgb(5, 55, 89);
-            color: white;
-            font-family: sans-serif;
-            font-size: 25px;
-            border-radius: 5px;
-            height: 50px;
-        }
-        select{
-            width: 20px;
-            border: 0px;
-        }
-        #crt,#onc{
-            margin-top: 10px;
-            
-        }
-        #crt>a,#onc>a{
-            text-decoration: none;
-        }
+        
+       
+       
+       
+        
+        
+        
+        
         
         
         
@@ -420,11 +385,11 @@
 </head>
 <body>
     <div id="nav">
-        <div id="HP"><a href="http://127.0.0.1:5500/project_day3_morning/landing_page.html"><img style="margin-top: 20px; width: 300px;" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
-        <div id="onc"><a href="http://127.0.0.1:5500/uday/online_course.html"><p>Online Courses</p></a></div>
-        <div id="crt"><a href="http://127.0.0.1:5500/uday/FODM.html"><p>Certification</p></a></div>
-        <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/live_training.html"><p>Live Training</p></a></div>
-        <div id="crt"><a href="http://127.0.0.1:5500/tushar_project1/remote_working.html"><p>Remote Working</p></a></div>
+        <div id="HP"><a href="landing_page.html"><img id="nav_bar_logo"  src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
+        <div id="onc"><a href="online_course.html"><p>Online Courses</p></a></div>
+        <div id="crt"><a href="FODM.html"><p>Certification</p></a></div>
+        <div id="crt"><a href="live_training.html"><p>Live Training</p></a></div>
+        <div id="crt"><a href="remote_working.html"><p>Remote Working</p></a></div>
         <div id="crt"><p> More <select name="  more " id="select">
             <option>Tools and Resources</option>
             <option>Help and FAQs</option>
@@ -434,7 +399,7 @@
         <button id="btn2">Register</button>
     </div>
 
-    <div class="promo_bar body_color soft_color">Join a live training for free and learn a new skill today</div>
+    <div class="promo_bar body_color soft_color ;" style="padding:70px 0 40px 0 ">Join a live training for free and learn a new skill today</div>
     
     <div id="get_started_cont">
         <div>
@@ -470,7 +435,7 @@
         <div>
             <h1>Why learn with Google</h1>
             <p class="soft_color">The majority of the courses are free, and approved by industry experts, top entrepreneurs and some of the world’s leading employers. So you can be sure that you’re learning up-to-date, real-world skills that help you reach your goal.</p>
-            <a href="http://127.0.0.1:5500/uday/FODM.html">Browse Courses</a>
+            <a href="FODM.html">Browse Courses</a>
         </div>
     </div>
 
@@ -544,6 +509,7 @@
             </div>
         </div>
     </div>
+    <div style="height: 100px; background-color: whitesmoke; "></div>
     
     
 

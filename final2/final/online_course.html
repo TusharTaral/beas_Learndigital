@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online course</title>
+   
+  
+    <style>
+        body {
+            background-color: whitesmoke;
+        } 
+        
+        #oc {
+            width: 100%;
+            display: grid;
+            margin-top: 50px;
+        }
+        #oc>#box-1 {
+            width: 100%;
+            height: 250px;
+            color: black;
+            background-color: white;
+        }
+        .line-1 {
+            width: 50%;
+            margin-left: 30px;
+            float: left;
+            margin-top: 40px;
+        }
+        #oc>#box-1>.line-1>h1{
+            font-size: 40px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #oc>#box-1>.line-1>h4{
+            font-size: 16px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+        #box-2{
+            width: 100%;
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 25% 72%;
+            gap: 30px;
+        }
+        
+        #cate-2 {
+            display: grid;
+            gap: 30px;
+            grid-template: "left-1 right-1"
+            "left-2 right-2"
+            "left-3 right-3"
+            "left-4 right-4"
+            "left-5 right-5"
+            "left-6 right-6";
+        }
+        #oc>#box-2>#cate-2>div>#down>h3{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+            color: rgb(48, 43, 43);
+        }
+        #oc>#box-2>#cate-2>div>#down>p{
+            margin-left: 20px;
+        }
+        #oc>#box-2>#cate-2>div>#down>span{
+            margin-left: 30px;
+        }
+        #oc>#box-2>#cate-2>div{
+            height: 450px;
+            background-color: rgb(17, 17, 17);
+            display: grid;
+            grid-template-rows: 60% 40%;
+            gap: 1px;
+            max-width: 100%;
+        }
+        #up{
+            height: 270px;
+            background-color: teal;
+            display: grid;
+        }
+        img {
+            width: 100%;
+            height: 270px;
+        }
+        #down{
+            height: 180px;
+            background-color: white;
+        }
+        
+        #cate{
+            width: 60%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        #cate>h4{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tick-box{
+            width: 20px;
+            height: 20px;
+            margin-bottom: 15px;
+            text-align: start;
+        }
+        
+        #nav{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template: "HP onc crt lit rw mr btn1 btn2";
+            position: fixed;
+            margin-top: -50px;
+        }
+        #nav>div>img{
+            width: 300px;
+        }
+        #nav>div>p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #btn1{
+            border: 0px;
+            background-color: white;
+            color: teal;
+            font-size: 20px;
+        }
+        #btn2{
+            border: 0px;
+            background-color: rgb(23, 45, 173);
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            border-radius: 5px;
+            height: 50px;
+        }
+        select{
+            width: 20px;
+            border: 0px;
+        }
+        #crt,#onc{
+            margin-top: 10px;
+            
+        }
+        #crt>a,#onc>a{
+            text-decoration: none;
+        }
+        #lt_footer{
+            width: 90vw;
+            height: 100px;
+            background-color: white;
+            float: left;
+            margin-top:50px;
+            padding: 20px;
+            color: rgb(138, 133, 133);
+        }
+        #lt_country{
+            text-align: right;
+            float: right;
+        }
+   
+    </style>
+</head>
+
+<body id="body">
+    <div id="nav">
+        <div id="HP"><a href="http://127.0.0.1:5500/final/landing_page.html"><img style="margin-top: 20px; width: 300px;height: 40px;" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
+        <div id="onc"><a href="http://127.0.0.1:5500/final/online_course.html"><p>Online Courses</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/final/FODM.html"><p>Certification</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/final/live_training.html"><p>Live Training</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/final/remote_working.html"><p>Remote Working</p></a></div>
+        <div id="crt"><p> More <select name="  more " id="select">
+            <option>Tools and Resources</option>
+            <option>Help and FAQs</option>
+            <option>Feedback</option>
+        </select></p></div>
+        <a href="http://127.0.0.1:5500/final/login.html" style="text-decoration: none;"> <p id="btn1">Sign in</p></a>
+        <a href="http://127.0.0.1:5500/final/login.html"> <button id="btn2">REGISTER</button></a>
+    </div>
+
+
+
+
+
+
+
+    <div id="oc">
+        <div id="box-1">
+            <div class="line-1">
+                <h1>Online Courses</h1>
+                <h4>Discover a range of free learning content designed to help your business or in your career. <br> You
+                    can learn by selecting individual modules, or dive right in and take an entire course end-to-end.
+                </h4>
+            </div>
+        </div>
+        <div id="box-2">
+            <div id="cate-1">
+                <div id="cate">
+                    <h4>CATEGORIES</h4>
+                    <input class="tick-box" type="checkbox">Digital Marketing<br>
+                    <input class="tick-box" type="checkbox">Career Development<br>
+                    <input class="tick-box" type="checkbox">Data and Tech<br>
+                </div>
+                <div id="cate">
+                    <h4>COURSE LENGTH</h4>
+                    <input class="tick-box" type="checkbox">Under 2 hours<br>
+                    <input class="tick-box" type="checkbox">2–10 hours<br>
+                    <input class="tick-box" type="checkbox">11–20 hours<br>
+                    <input class="tick-box" type="checkbox">20+ hours<br>
+                </div>
+                <div id="cate">
+                    <h4>CERTIFICATION</h4>
+                    <input class="tick-box" type="checkbox">Free certificate<br>
+                    <input class="tick-box" type="checkbox">Paid certificate
+                </div>
+                <div id="cate">
+                    <h4>COURSE DIFFICULTY</h4>
+                    <input class="tick-box" type="checkbox">Beginner<br>
+                    <input class="tick-box" type="checkbox">Intermediate<br>
+                    <input class="tick-box" type="checkbox">Advanced<br>
+                </div>
+                <div id="cate">
+                    <h4>COURSE PROVIDER
+                    </h4>
+                    <input class="tick-box" type="checkbox">Google<br>
+                    <input class="tick-box" type="checkbox">Applied Digital Skills
+                    <br>
+                    <input class="tick-box" type="checkbox">Coursera<br>
+                    <input class="tick-box" type="checkbox">Darden School of Business, University of Virginia
+                    <br>
+                    <input class="tick-box" type="checkbox">Deakin University
+                    <br>
+                    <input class="tick-box" type="checkbox">FutureLearn
+                    <br>
+                    <input class="tick-box" type="checkbox">Goodwill Community Foundation
+                    <br>
+                    <input class="tick-box" type="checkbox">Google Cloud
+                    <br>
+                    <input class="tick-box" type="checkbox">Grasshopper<br>
+                    <input class="tick-box" type="checkbox">Monash University
+                    <br>
+                    <input class="tick-box" type="checkbox">National Chiao Tung University
+                    <br>
+                    <input class="tick-box" type="checkbox">OpenClassrooms<br>
+                    <input class="tick-box" type="checkbox">Skillshop<br>
+                    <input class="tick-box" type="checkbox">The Open University
+                    <br>
+                    <input class="tick-box" type="checkbox">Udacity<br>
+                    <input class="tick-box" type="checkbox">University of Auckland
+                    <br>
+                    <input class="tick-box" type="checkbox">University of Groningen
+                    <br>
+                    <input class="tick-box" type="checkbox">University of Helsinki<br>
+                    <input class="tick-box" type="checkbox">YouTube
+                </div>
+            </div>
+            <div id="cate-2">
+                <div id="left-1">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/JwZ74w1xLAO0n24knlxgL9HZJo3NTN3V44YrtyXZvivX4sHYmiyBs89KIxTOIYTR4IDgFq-VFx6L3gutEpDkpicLzl96KKSYbVh3f08"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Fundamentals of digital marketing</h3>
+                        <p>Created by Google <br><br> Module : 01 <span>Hours : 03</span></p>
+                        <a style="float:right; margin-right: 20px;" href="http://127.0.0.1:5500/uday/FODM.html">>></a>
+                    </div>
+                </div>
+                <div id="right-1">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/VCySelVpWhpnptHVJQUrbApVNMkZxDc5mV_yYTCjNpqaqqXCVoaErdkVEDfFLzfv24aARytx8fVFcJ4ncXDIsOoYm6kEJHxeTJDA4w"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Get a business online</h3>
+                        <p>Created by Google <br><br> Module : 02 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="left-2">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/wgngkh7imqYaUCAxS4ZXNWX_yRHcxUdS3YktPSAmfuC-5v6FysJX1i0SJlMAxggbqxFF2LLK0eKOJsi_WiRSddjqhISRbx3o8y2uSQ"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Make sure customers find you online</h3>
+                        <p>Created by Google <br><br> Module : 03 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="right-2">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/Qe6rouDeZdegN3kiIdH0ldFk937MZQw-GuEuSwxV3hMZHRbbShT6tny6QflRyzlhgaXEo5FUhbugmcZV6n2wXZYJ1QC4WzHEH55HVQ"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Promote a business with online advertising</h3>
+                        <p>Created by Google <br><br> Module : 04 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="left-3">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/GEZkwI86ND9Jk4Gnvx_OXG-t41FxrX4llICD0VlaRcFdSSt14y4nqYjcyKtcArbD_aKiyfMbsCOl5cQsLO5ghkhEl74GtaArgGZ_Eg"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Expand a business to other countries</h3>
+                        <p>Created by Google <br><br> Module : 05 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="right-3">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/J0awSpEunLoDSirGJuGxQcVwemAY2zKhKHsWJQLJwSuFT8B5dT2lIrpBHJqJeV6XymA2US8MBHHzXedrHK0c8iGTgtPz4JiCwYKy"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Connect with customers over mobile</h3>
+                        <p>Created by Google <br><br> Module : 06 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="left-4">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/NrJSG8luUx9qtDOIcBsy7IND0TaY4U6Y8Oid4Pxd72a8259F4RcW4DoV3V05iTxttBW5eROgNmQm7PXJQ-2wFOBpqRUpRhkcPL9k"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Promote a business with content</h3>
+                        <p>Created by Google <br><br> Module : 07 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="right-4">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/K6gFGHXEPQSMJGhVG2_g8xU6dHaGSTuwUrASFWAc9f5R-J9eEd0frsrU9PG1JHaKNj9L9fvuzZhStfxPkx2zPzfP_KhmqWUp-c9BRG4"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Understand customers needs and online behaviours</h3>
+                        <p>Created by Google <br><br> Module : 08 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="left-5">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/f9j7gtEN8G7R_QeJrxSrJPgslWohmYaCmAKEd7cD8PBfLK8mP75MMf9KHWS-0-fcbu9qpKMGlglnYL9CM6mXN8T2O1yqoK-Pj9pU"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Build confidence with self-promotion</h3>
+                        <p>Created by Google <br><br> Module : 09 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="right-5">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/4yN6bubrlD4yQZrpbW6iK85UFVa0pk4uSFLSnne5NR8uGjGwZpOM6KBRzRVeswQ_PudA4OgY5DodM1AOS3p1SWfV8TwYc4uWBnbmzA"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>How to enhance and protect your online campaign</h3>
+                        <p>Created by Google <br><br> Module : 10 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="left-6">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/Kg0KxcD49cefRFjpTRtjSqxNYrvu1e66IPBtIXxWhcm4pWgwUlh0vvTStXuXldXm4AW5fTzC1KZZ4lj9RhhX3KzbQZZ17e2uI4Xivw"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Land your next job</h3>
+                        <p>Created by Google <br><br> Module : 11 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+                <div id="right-6">
+                    <div id="up"><img
+                            src="https://lh3.googleusercontent.com/YOonl33Enbl453dqbHKoPJnhBS-rjVbMq8UttDk67ZBw7Rv2aIbkmgbpoLlCH4yX-wzvc8CRa7hUCBK41yYNin8uOSf_gtjxDcNSTA"
+                            alt=""></div>
+                    <div id="down">
+                        <h3>Understand the basics of code</h3>
+                        <p>Created by Google <br><br> Module : 12 <span>Hours : 03</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="lt_footer"><h1>A Grow with Google  Programme</h1>
+        <label id="lt_country">: Privacy & Term </label>
+          <select id="lt_country" style="width: auto;"> India
+              <option>India</option>
+              <option>Japan</option>
+              <option>USA</option>
+              <option>Israel</option>
+              <option>UK</option>
+              <option>Sweden</option>
+              <option>Netherland</option>
+              <option>Iran</option>
+              <option>Republic of congo</option>
+              <option>Bangladesh</option>
+              <option>China</option>
+              <option>Germany</option>
+              <option>France</option>
+          </select>
+    </div>
+</body>
+
+</html>

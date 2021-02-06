@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="navigation_style.css">
+    <link rel="stylesheet" href="live_training_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="fodm.css"> -->
+    <style>
+        #data_and_tech_box:hover{
+            background-color: rgb(207, 26, 26); 
+            color: white;
+        }
+        #digital_marketing_box:hover{
+            background-color: rgb(17, 92, 17);
+            color: white;
+        }
+        #career_dev_box:hover{
+            background-color: rgb(13, 13, 163);
+            color: white;
+        }
+        *{
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .body_color{
+            background-color: whitesmoke;
+        }
+        .promo_bar{
+            width: 100%;
+            height:55px;
+            padding: 19px 30px;
+            text-size-adjust: 100%;
+            font-size: 14px;
+            text-align: center;
+            font-weight: 900;
+        }
+        .soft_color{
+            box-sizing: border-box;
+            color: rgb(154, 160, 166);
+            font-style: normal;
+            font-weight: 400;
+        }
+        #get_started_cont{
+            display: grid;
+            grid-template: "a b" ;
+            margin-bottom: 0%;
+        }
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 768px) {
+            #get_started_cont{
+                grid-template: "a" "b" ;
+            }
+            #get_started_cont > div:nth-child(2) > img{
+                width: 100%;
+            }
+        } 
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 768px) {
+            #get_started_cont > div:nth-child(2) > img{
+                width: 160%;
+            }
+        } 
+        
+        #get_started_cont > div:nth-child(1){
+            margin-top: 3%;
+            margin-left: 2%;
+
+        }
+        #get_started_cont > div:nth-child(1) > h1, p, button {
+            margin: 5%;
+        }
+        #get_started_cont > div:nth-child(2) > img{
+            width: 100%;
+            height: 100%;
+        }
+        .lp_button{
+            margin-top: 15%;
+            width: 139px;
+            height: 46px;
+            font-weight: 600;
+            font-size: 15px;
+            color: white;
+            background-color: rgb(82, 82, 255);
+            border-radius: 2px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: .5px;
+            line-height: 26px;
+            padding: 10px 24px;
+            border: 0;
+        }
+        #category_buttons{
+            background-color: whitesmoke;
+            border: 1px solid white;
+
+        }
+        #category_buttons > h1{
+            padding-top: 25px;
+            text-align: center;
+            
+        }
+        #category_buttons > p{
+            margin: 0%;
+        }
+        #category_buttons > ul{
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, 0.87);
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            font-family: "Google Sans", Arial, sans-serif;
+            margin:25px;
+            justify-content: center;
+            line-height: 16px;
+        } 
+        .button_list_item{
+            border: 1px solid rgb(189, 189, 189);
+            background-color:white;
+            box-shadow: 0 0 12px 2px rgb(0 0 0 / 2%);
+            border-radius: 35px;
+            display: flex;
+            flex-grow: 10;
+            flex-direction: column;
+            padding:10px;
+            font-weight: 500;
+            font-size: 20px;
+            width: 130px;
+            height: 32px;
+            text-align: justify;
+            padding-top: 20px;
+        }
+        #category_buttons > ul >li {
+            margin : 0 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #data_and_tech_box{
+            color: red;
+        }
+        #digital_marketing_box{
+            color: green;
+        }
+        #career_dev_box{
+            color: blue;
+        }
+        #browse_couses_cont{
+            display: grid;
+            grid-template: "a b";
+            gap: 10px;
+            margin-bottom: 110px;
+        }
+        @media only screen and (max-width: 768px) {
+            #browse_couses_cont{
+                grid: "a" "b";
+            }
+        } 
+        
+
+        #browse_couses_cont > div:nth-child(1)>img{
+            width: 100%;
+            height: 100%;
+            
+            ;
+        }
+        #browse_couses_cont > div:nth-child(1){
+            width: 100%;
+            height: 100%;
+        }
+        #browse_couses_cont > div:nth-child(2) {
+            margin: 50px 59px;
+            max-height: 100%;
+            margin-left: 100px;
+            
+            
+        }
+        #browse_couses_cont > div:nth-child(2) > p{
+            margin-bottom: 40px;   
+        }
+        #simple_steps_cont{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template: "a b c" ;
+            margin: 50px 0px;
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+
+        @media only screen and (max-width: 768px) {
+            #simple_steps_cont{
+                grid-template:"a" "b" "c" ;
+            }
+        } 
+        #simple_steps_cont > div{
+            flex-grow: 1;
+            padding: 2%;
+            display: flex;
+            flex-basis: 100px ;
+
+        }
+        #simple_steps_cont img {
+            width: 50px;
+        }
+        #simple_steps_cont h2{
+            margin-left: 10px;
+        }
+        #learn_online{
+            text-align: center;
+            background-color:whitesmoke;
+            height: auto ;
+            display: grid;
+            grid-gap: 3%;
+            grid-template: "a_1 b_1 c_1"
+                        "a_2 b_2 c_2" ;
+        }
+
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (max-width: 768px) {
+            #learn_online{
+                grid-template: "a_1" "b_1" "c_1"
+                        "a_2" "b_2" "c_2";
+                grid-gap:0% ;
+            }
+        }
+        
+        #learn_online_heading{
+            text-align: center;
+            font-size:40px;
+            margin-top: 30px;
+            padding-top: 20px;
+            background-color: whitesmoke;
+        }
+        #learn_online > div {
+            width: 250px;
+            height: 275px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        #learn_online > div > h4{
+            margin: auto;
+        }
+        #a_1{
+            grid-area: a_1;
+        }
+        #b_1{
+            grid-area: b_1;
+        }
+        #c_1{
+            grid-area: c_1;
+            padding-top: 10px;
+        }
+        #a_2{
+            grid-area: a_2;
+            
+        }
+        #b_2{
+            grid-area: b_2;
+            
+            
+        }
+        #c_3{
+            grid-area: c_2;
+        }
+        #a_get_started{
+            color: blue;
+            margin:auto;
+            margin-left: 15px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        #see_more_topic{
+            text-decoration: none ;
+            text-align: center;
+            background-color: whitesmoke;
+            padding-bottom: 40px;
+            font-weight: 500;
+            
+        }
+        #lp_live_training_cont{
+            height: 1084px;
+            border: 2px solid red;
+        }
+        #section_programmes{
+            height: 550px;
+            background-color: whitesmoke;
+            text-align: center;
+            
+        }
+        #section_programmes_grid{
+            display: grid;
+            grid-template: "h1 h2 h3" ;
+            padding: 0 5px 0 0;
+            
+        }
+        @media only screen and (max-width: 768px) {
+            #section_programmes_grid{
+                grid-template:"a" "b" "c" ;
+            }
+        } 
+        #section_programmes_grid > div {
+            width: 250px;
+            height: 330px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background-color: white;
+            
+        }
+        #section_programmes_grid p{
+            font-size: smaller;
+            padding: 18px 27px 18px 10px;
+            text-align: left;
+            font-weight: 400;
+            color: rgb(154, 160, 166);
+            font-size: 12px;
+            
+        }
+        #section_programmes > p {
+            margin: 2%;
+            padding: 0%;
+        }
+        
+        #h_1{
+            grid-area: h1;
+            border: 2px solid red;
+        }
+        #h_2{
+            grid-area: h2;
+            border: 2px solid red;
+        }
+        #h_3{
+            grid-area: h3;
+            border: 2px solid red;
+        }
+        #h_5{
+            text-align: left;
+            margin-left: 7%;
+            font-weight: 400 ;
+            font-size: 10px;
+        }
+        #lp_gap{
+            height: 50px;
+            background-color: whitesmoke;
+        }
+        #lt_footer{
+            width: 90vw;
+            height: 100px;
+            background-color: white;
+            float: left;
+            margin-top:40px;
+            padding: 20px;
+            color: rgb(138, 133, 133);
+        }
+        #lt_country{
+            text-align: right;
+            float: right;
+        }
+        #nav{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template: "HP onc crt lit rw mr btn1 btn2";
+            position: fixed;
+            
+        }
+        #nav>div>img{
+            width: 300px;
+        }
+        #nav>div>p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #btn1{
+            border: 0px;
+            background-color: white;
+            color: teal;
+            font-size: 20px;
+            height: 40px;
+            margin-top: 10px;
+        }
+
+        #btn2{
+            border: 0px;
+            background-color: rgb(27, 68, 180);
+            color: white;
+            font-family: sans-serif;
+            font-size: 18px;
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        select{
+            width: 20px;
+            border: 0px;
+        }
+        #crt,#onc{
+            margin-top: 10px;
+            
+        }
+        #crt>a,#onc>a{
+            text-decoration: none;
+        }
+
+        .lt_available{
+            float: left;
+        }
+        #lt_cv{
+            width: 76wv;
+            height: 220px;
+            margin: 30px 300px;
+            text-align: left;
+            background-color: white;
+            padding: 20px;
+           font-family:Arial, Helvetica, sans-serif;
+        }
+        #lt_regi{
+            text-align: right;
+            height: 40px;
+            width: 120px;
+            color: white;
+            padding-right: 25px;
+            background-color: blue;
+            border: blue;
+            margin-left: 500px;
+            margin-bottom: -50px;
+            margin-top: -50px;
+        }
+        #lt_w300{
+            font-weight: 400;
+            color: rgb(122, 118, 118);
+            font-family: Arial, Helvetica, sans-serif   ;
+        }
+        
+        
+        
+    </style>
+
+</head>
+<body>
+    <div id="nav">
+        <div id="HP"><a href="http://127.0.0.1:5500/final/landing_page.html"><img style="margin-top: 20px; width: 300px;" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng" alt=""></a></div>
+        <div id="onc"><a href="online_course.html"><p>Online Courses</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/final/FODM.html"><p>Certification</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/final/live_training.html"><p>Live Training</p></a></div>
+        <div id="crt"><a href="http://127.0.0.1:5500/final/remote_working.html"><p>Remote Working</p></a></div>
+        <div id="crt"><p> More <select name="  more " id="select">
+            <option>Tools and Resources</option>
+            <option>Help and FAQs</option>
+            <option>Feedback</option>
+        </select></p></div>
+        <a href="http://127.0.0.1:5500/final/login.html" style="text-decoration: none;padding-top: -20px;"> <p id="btn1">Sign in</p></a>
+        <a href="http://127.0.0.1:5500/final/login.html"> <button style="width: auto;" id="btn2">REGISTER</button></a>
+    </div>
+
+    <div class="promo_bar body_color soft_color">Join a live training for free and learn a new skill today</div>
+    
+    <div id="get_started_cont">
+        <div>
+            <h1>Get new skills for a digital world</h1>
+            <p>Learn at your own pace, with flexible and personalised training courses designed to build your confidence and help you thrive.</p>
+            <ul>
+                <li>Discover tools to make your business succeed</li>
+                <li>Improve your interview skills</li>
+                <li>Prepare for the career you want</li>
+            </ul>
+            <a href="http://127.0.0.1:5500/final/online_course.html"> <button class="lp_button">Get Started</button>  </a> 
+        </div>
+
+        <div>
+            <img src="https://lh3.googleusercontent.com/7IsyjN-m_0Uh7BYJVP5JQY8xaDh3KYdOlihzXkDiLZNsldx9e8cWDcK6fZDScDAB2OuiNzLp246cdwE3svOq4rOazN77Edg2J66c1w=h754-w1000" alt="">
+
+        </div>
+
+    </div>
+    <div id="category_buttons">
+        <h1>Gain today's most in-demand skills</h1>
+        <p class="promo_bar">Gain the skills you need, whether you're growing your business, starting a career, or just want to try something new.</p>
+        <ul style="margin-top: 0%;"> 
+            <li class="button_list_item" id="data_and_tech_box">Data and Tech</li class="button_list_item">
+            <li class="button_list_item" id="digital_marketing_box">Digital Marketing</li class="button_list_item">
+            <li class="button_list_item" id="career_dev_box">Career Development</li>
+        </ul>
+    </div>
+
+
+    <div id="browse_couses_cont">
+        <div><img src="https://lh3.googleusercontent.com/N0i4GLmSJAbQGObrzvVzqXj0w7OtazRddKyAvVrdT83nDpIGg4qgEJqPOoFHfBMaqfs8Vc4akuHLfL4zc0HGb8UKTN5c9n5j4Wu_hA=h943-w1412" alt=""></div>
+        <div>
+            <h1>Why learn with Google</h1>
+            <p class="soft_color">The majority of the courses are free, and approved by industry experts, top entrepreneurs and some of the world’s leading employers. So you can be sure that you’re learning up-to-date, real-world skills that help you reach your goal.</p>
+            <a href="http://127.0.0.1:5500/final/online_course.html">Browse Courses</a>
+        </div>
+    </div>
+
+
+    <div id="simple_steps_cont">
+         <div >
+            <div> <img src="https://lh3.googleusercontent.com/mtCqnQv6kLOjll-APlF2WKcVo3jVywLGuLYFWdI-VyjhG-X1-_TD9KB66DmCa5NSrHHSTzNA5HPH-sfOyjO1tyxCuBerda6KxAgOiA=h176-w176" alt=""/></div>
+            <div ><h2>Choose a skill</h2>
+                <p class="soft_color">
+                    Whether you're a student or a business, at the start or in the middle of your journey, here you can choose the lessons that are right for you.
+                  </p>
+            </div>
+                
+        </div>
+        <div>
+            <div> <img src="https://lh3.googleusercontent.com/pZm00maF5sXRrbPpG8AvVkdKhXlZiGvw2O34IRsNi_8B2WElphurbJP55MyRNLNwSZLGQXK_ouTuSN6cYt526Y8d154_8lmuvsd2=h176-w176" alt=""/></div>
+            <div ><h2>Learn at your pace</h2>
+                <p class="soft_color" > 
+                    Create your own unique learning plan on your computer, smartphone or tablet.
+                </p>
+            </div>
+        </div>
+         
+        <div>
+            <div> <img src="https://lh3.googleusercontent.com/XKaVIYlfQa8ezYFL47BgJwjywmxZoBAICcUykdejVQhSwtPcRmUknx82Lp8tGzs42FyEhRtSIgrzLt226HN2sa_nr-9OOq01aXa2=h176-w176" alt=""/></div>
+            <div ><h2>Get Certified</h2>
+                <p class="soft_color"> 
+                    Track your progress and receive an accredited certificate that can help boost your LinkedIn profile and CV.
+                </p>
+            </div>
+        </div>
+    </div>
+    <h1 id="learn_online_heading">Learn Online</h1>
+
+    <div id="learn_online">
+        <div class="a_1"><img src="https://lh3.googleusercontent.com/kQxxsGboKbhDplq-SfJP_U5qyx5iQt3qolFB-Hk-pPnIs-FEzLAX2xGOpULBmGVWV-Nz9T3rSqoMxZegeJOPcbWIRidnOk1fXBy63w=h380-w654" alt=""><h4>Sieze the digital opportunity</h4>  <a id="a_get_started" href="online_course.html">Get Started</a></div>
+        <div class="b_1"><img src="https://lh3.googleusercontent.com/2k2ITZ05IKk03d-SkZzu9HfzPC_hcY33LjLZBFy0J37Z07I1bMCvHg1NxRNBdlou5ToTUtHX4m9HdTnkSj-D-xgD896w8tegtyQkpw=h380-w654" alt=""><h4>Explore How Websites Work</h4><a id="a_get_started" href="online_course.html">Get Started</a></div>
+        <div class="c_1"><img src="https://lh3.googleusercontent.com/UdQFu9K3MPNaGLAX9unGuPOEyg_IW067elKCJD2i428wAlH_cPbf85Ga28AdRiXAe7rYSvVFlkUEme2ZyMpghoum2Ck25Wc0PYORmg=h380-w654" alt=""><h4>Build a strong online strategy</h4> <a id="a_get_started" href="online_course.html">Get Started</a></div>
+        <div class="a_2"><img src="https://lh3.googleusercontent.com/iihZLBz4izhlJc9D7ncyBnkojWCNWuE81oe2SGVp8AIaa0dPESPUFf75tO1uBYVvXlMn-VBLB4GTzU64edAmt9vLQvGRIwAdcA1NUIE=h380-w654" alt=""><h4>Manage your time effectively</h4> <a id="a_get_started" href="online_course.html">Get Started</a></div>
+        <div class="b_2"><img src="https://lh3.googleusercontent.com/Rg2n9Zxwt6ICy6krCNZeZMi9v0jrcTaszOAKMueQRNiqU9NFOqcA6N-kcFoucHknlKG2M4EY8q2c9Nd37IaYpENdc2H1TpicmGf0lA=h380-w654" alt=""><h4>Create a long-term social media plan </h4><a id="a_get_started" href="online_course.html">Get Started</a></div>
+        <div class="c_2"><img src="https://lh3.googleusercontent.com/8rsdIeVH8dqHwwQdQRnnX7y7sotSgK5Bsb66meTwqpU5BFJJlZ2hH-PVK9vWvt4x57e0NIQwKEHUWTvOozsg6yHhboEYqZZHZPE1pw=h380-w654" alt=""><h4>Learn how to export and expand your business internationally</h4> <a id="a_get_started" href="online_course.html">Get Started</a></div>
+    </div>
+    <div style="background-color: whitesmoke ; height: 75px;"></div>
+    <div id="see_more_topic"><a id="see_more_topic" href="online_course.html">See More Topics</a></div>
+
+    <hr/>
+    <div id="lt_cv">
+        <div>
+          <h1 style="margin-left:40px ;">Writing for Social Media</h1>
+           <p id="lt_w300">
+              Engaging copy can help you say more with less when posting on your social media channels. If you manage a
+               social media channel for your business and you’re looking at ways to sh...</p>
+        </div>
+        <div >
+          <p id="lt_w300" class="lt_available">Available from Wednesday,
+            February 6 <button id="lt_regi">REGISTER</button>online</p>
+        </div>
+    </div>
+  
+    <div id="lt_cv">
+      <div>
+        <h1 style="margin-left:40px ;">Productivity for Working Remotely</h1>
+         <p id="lt_w300">
+    
+  Working from home can bring challenges, from setting up a healthy work routine to staying focused at home. Discover
+   how to create a productive remote working environment for yo...</p>
+      </div>
+      <div >
+        <p id="lt_w300" class="lt_available">Available from Wednesday,
+            February 9<button id="lt_regi">REGISTER</button>Online </p>
+      </div>
+  </div>
+  
+  <div id="lt_cv">
+    <div>
+      <h1 style="margin-left:40px ;">Get Started with Live Streaming</h1>
+       <p id="lt_w300">Live streams can be an authentic and low-resource way to speak to your customers online. 
+           Whether you’re a freelancer, business owner, or curious how to broadcast a live stream, ...</p>
+    </div>
+    <div >
+      <p id="lt_w300" class="lt_available">Available from Wednesday,
+        February 10 <button id="lt_regi">REGISTER</button>Online </p>
+    </div>
+  </div>
+
+
+
+      <div style="width: 95%; height: 100px; clear: both;"></div>
+    <div id="lp_gap"></div>
+
+    <!-- <div id="lp_live_training_cont"></div> -->
+
+    <div id="section_programmes">
+        <div><h2>How others are growing with our training</h2></div>
+        <p class="promo_bar soft_color" style="margin-top: 1%; ">Hear from real people who have successfully achieved their goals, turned their passions into reality and grown their businesses.</p>
+        <div id="section_programmes_grid">
+            <div id="h_1 "> 
+                
+                <video width="250" height="140" controls> <source src="1.mp4" type="video/mp4"> <embed src="video.swf" width="470" height="255">Your Browser does not support video </video>
+                
+                <p>See how Seyi Ayinla used Digital Garage to turn her hobby into a business helping Nigerian couples in the UK plan their perfect wedding.</p><h5 id="h_5" style="padding-top: 1.3%; ">FOR YOUR STARTUP</h5>
+            </div>
+            
+            <div id="h_1 ">
+                <video width="250" height="140" controls> <source src="2.mp4" type="video/mp4"> Your Browser does not support video </video>
+                <p>Learn how Jonathon Blackburn transformed his business after attending Digital Garage.</p> 
+                <h5 id="h_5" style="padding-top: 15%;;">FOR YOUR BUSINESS</h5>
+            </div>
+            <div id="h_3 ">
+                <video width="250" height="140" controls> <source src="3.mp4" type="video/mp4"> Your Browser does not support video </video>
+                <p>Discover how Adam, a barber from Birmingham, grew his web presence with the help of Google Digital Garage.</p>
+                 <h5 id="h_5" style="padding: 8% 0 0 2% ; ">FOR YOUR BUSINESS</h5>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div id="lt_footer"><h1>A Grow with Google  Programme</h1>
+        <label id="lt_country">: Privacy & Term </label>
+          <select id="lt_country" style="width: auto;"> India
+              <option>India</option>
+              <option>Japan</option>
+              <option>USA</option>
+              <option>Israel</option>
+              <option>UK</option>
+              <option>Sweden</option>
+              <option>Netherland</option>
+              <option>Iran</option>
+              <option>Republic of congo</option>
+              <option>Bangladesh</option>
+              <option>China</option>
+              <option>Germany</option>
+              <option>France</option>
+          </select>
+    </div>
+
+    
+</body>
+</html>
