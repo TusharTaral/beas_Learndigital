@@ -1,6 +1,6 @@
 # beas_Learndigital
 # About:-
-# The Digital Garage is a non-profit nationwide programme from Google delivering free digital skills training via an online learning platform.
+   The Digital Garage is a non-profit nationwide programme from Google delivering free digital skills training via an online learning platform.
 
 <a href="#"><img width="100%" height="auto" src="https://i.ibb.co/wW8XpGg/Screenshot-951.png" height="175px"/></a>
 
