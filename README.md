@@ -1,22 +1,29 @@
 # beas_Learndigital
+#About:-
+#The Digital Garage is a non-profit nationwide programme from Google delivering free digital skills training via an online learning platform.
 
-We are team BEAS.
+<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/wW8XpGg/Screenshot-951.png" height="175px"/></a>
+
+
+
+#We are team BEAS.
 We have 3 members in our project team.
 1)Tushar
 2)Uday
 3)Ashray
 
-(One member is not responding so we divide work in 3 parts.)
-The landing page is designed by Ashray.
-Online course and Certification page designed by Uday.
-Remote Working and Live Course designed by Tushar.
+* The landing page is designed by Ashray.
+* Online course and Certification page designed by Uday.
+* Remote Working and Live Course designed by Tushar.
 
 
---In Landing page we used HTML,CSS,and JS.
---We have also used some hover effect,js to change color of text when mouse hover.
---In most of the pages we use grid and flex also use position fixed for top bar.
-and some same page navigation anchor tab.
+#TECH STACKS:-
 
-We have also uploaded demo-video in our login.
+* HTML
+* CSS
+* JAVASCRIPT
+
+#WEBSITE IS HOSTED FROM VERCEL:
+* LINK (https://google-digital-garage.vercel.app/)
 
 
