@@ -19,9 +19,9 @@ We have 3 members in our project team.
 2)Uday
 3)Ashray
 
-* The landing page is designed by ## Ashray.
-* Online course and Certification page designed by ## Uday.
-* Remote Working and Live Course designed by ## Tushar.
+* The landing page is designed by Ashray.
+* Online course and Certification page designed by Uday.
+* Remote Working and Live Course designed by Tushar.
 
 
 # TECH STACKS:-
