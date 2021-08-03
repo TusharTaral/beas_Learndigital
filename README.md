@@ -1,6 +1,11 @@
-# beas_Learndigital
-# About:-
+# Team BEAS
+
+## Google Digital Garag clone
+
+## About:-
    * The Digital Garage is a non-profit nationwide programme from Google delivering free digital skills training via an online learning platform.
+
+
  ## some glimpses of project:-
 <a href="#"><img width="100%" height="auto" src="https://i.ibb.co/wW8XpGg/Screenshot-951.png" height="175px"/></a>
 
@@ -13,7 +18,7 @@
 <a href="#"><img width="100%" height="auto" src="https://i.ibb.co/bzQZCvb/Screenshot-958.png" height="175px"/></a>
 
 
-# We are team BEAS.
+## We are team BEAS.
 We have 3 members in our project team.
 1)Tushar
 2)Uday
@@ -30,7 +35,7 @@ We have 3 members in our project team.
 * CSS
 * JAVASCRIPT
 
-# WEBSITE IS HOSTED FROM VERCEL:
-* LINK (https://google-digital-garage.vercel.app/)
+# Website is hosted from VERCEL:
+* Link:- https://google-digital-garage.vercel.app/
 
 
